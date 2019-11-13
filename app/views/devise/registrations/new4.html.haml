@@ -1,0 +1,16 @@
+.devise.signup-payment
+  =render "devise/shared/header"
+  .deviseSection
+    .inner
+      %h2.title 支払い方法
+      .deviseForm
+        =form_for :credit_cards, html: {class: "content__chapter__form"}, url: credit_user_registration_path, method: :post do |f|
+          =render "credit_cards/cardform", {f: f}
+        .new_user
+          .deviseForm__actions
+            =button_to sinup_user_registration_path, class: "deviseBtn" do
+              次に進む
+            =link_to sinup_user_registration_path, class: "deviseBtn" do
+              次に進む
+
+  =render "devise/shared/footer"

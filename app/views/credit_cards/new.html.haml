@@ -1,0 +1,15 @@
+= render "shared/header"
+.main
+  .contents
+    = render "users/leftcontent"
+
+.content  
+  .content__chapter
+    %h2.content__chapter__head
+      クレジットカード情報入力
+      %form.content__chapter__form
+    = render "cardform"
+      %button#submit-button.form-box__btn 追加する
+= render "shared/purchaseBtn"
+= render "shared/banner"
+= render "shared/footer"

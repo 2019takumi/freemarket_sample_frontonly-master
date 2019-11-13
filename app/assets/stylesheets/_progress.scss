@@ -1,0 +1,158 @@
+.progress {
+  padding: 40px 0 0 44px;
+  border: 0;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+  &-bar{
+    margin: 0;
+    li{
+      margin: 0 40px 0 0;
+      padding: 0;
+      position: relative;
+      z-index: 40;
+      display: inline-block;
+      min-width: 60px;
+      font-size: 12px;
+      color: gray;
+      .progress-status{
+        position: absolute;
+        left: 40%;
+        width: 12px;
+        height: 12px;
+        margin: 3px auto 0;
+        background: gray;
+        border-radius: 50%;
+        z-index: 30;
+      }
+    }
+  }
+}
+
+.progress-status_bar {
+  position: absolute;
+  left: 50%;
+  top: 25px;
+  bottom: 5px;
+  display: block;
+  width: 130px;
+  height: 2px;
+  background: $lightgray;
+  z-index: 10;
+}
+
+.end .progress-status_bar {
+  width: 0px;
+}
+.payment .progress-status_bar {
+  width: 100px;
+}
+#through{
+  color: $red;
+  .progress-status{
+    background: $red;
+  }
+}
+#through .progress-status_bar{
+  background: $red;
+}
+#active{
+  color: #ea352d;
+  .progress-status{
+    background: #ea352d;
+  }
+}
+
+ // 会員情報
+.signup-through {
+  #through {
+    @include progressThis;
+  }
+  #active {
+    @include progressStandBy;
+  }
+  #address {
+    @include progressStandBy;
+  }
+  #payment {
+    @include progressStandBy;
+  }
+  #end{
+    @include progressStandBy;
+  }
+}
+
+ // 電話番号認証
+.signup-active {
+  #through {
+    @include progressDone;
+  }
+  #active {
+    @include progressThis;
+  }
+  #address {
+    @include progressStandBy;
+  }
+  #payment {
+    @include progressStandBy;
+  }
+  #end{
+    @include progressStandBy;
+  }
+}
+
+ // お届け住所登録画面
+.signup-address {
+  #through {
+    @include progressDone;
+  }
+  #active {
+    @include progressDone;
+  }
+  #address {
+    @include progressThis;
+  }
+  #payment {
+    @include progressStandBy;
+  }
+  #end{
+    @include progressStandBy;
+  }
+}
+
+ // クレジットカード登録画面
+.signup-payment {
+  #through {
+    @include progressDone;
+  }
+  #active {
+    @include progressDone;
+  }
+  #address {
+    @include progressDone;
+  }
+  #payment {
+    @include progressThis;
+  }
+  #end{
+    @include progressStandBy;
+  }
+}
+ // 完了画面
+.signup-done {
+  #through {
+    @include progressDone;
+  }
+  #active {
+    @include progressDone;
+  }
+  #address {
+    @include progressDone;
+  }
+  #payment {
+    @include progressDone;
+  }
+  #end{
+    @include progressThis;
+  }
+}

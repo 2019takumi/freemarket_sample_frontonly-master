@@ -1,0 +1,21 @@
+.devise.signup-active
+  = render "devise/shared/header"
+  .deviseSection
+    .inner
+      %h2.title 電話番号の確認
+      .deviseForm
+        .new_user
+          = form_for :personal_information, url: personal_information_user_registration_path,method: :post do |f|
+
+            .deviseForm__field
+              = f.label :認証番号
+              = f.text_field :tel, placeholder: '携帯電話の番号を入力', class: "inputField", required: true
+              %p SMSで届いた認証番号を入力してください
+            .deviseForm__actions
+              = button_to personal_information_user_registration_path, class: "deviseBtn" do
+                SMSを送信する
+              = link_to personal_information_user_registration_path, class: "deviseBtn" do
+                SMSを送信する
+
+
+  =render "devise/shared/footer"

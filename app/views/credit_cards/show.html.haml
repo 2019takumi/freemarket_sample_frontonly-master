@@ -1,0 +1,29 @@
+= render "shared/header"
+.main
+  .contents
+    = render "users/leftcontent"
+    .content  
+      .content__chapter
+        %h2.content__chapter__head
+          支払い方法
+        .card-index
+          %section.card-index__title
+            .card-index__title__head
+              %h3.card-index__title__head__sub クレジットカード一覧
+            %ul.card-index__title__list
+              %li.card-detail
+                %form.card-detail__form
+                  %figure
+                    = image_tag "visa.svg", alt: "icon", height: "15", width: "49"
+                  .card-detail__form__num ************1234
+                  .card-detail__form__limit-num 12/20
+                  %button.card-detail__form__button{type: "submit"} 削除する
+
+          .card-index__regist
+            = link_to "", class: "card-index__regist__link" do
+              %span.card-index__regist__link__text 支払い方法について
+              %i.fa.fa-chevron-right
+
+= render "shared/purchaseBtn"
+= render "shared/banner"
+= render "shared/footer"

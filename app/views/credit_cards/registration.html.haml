@@ -1,0 +1,26 @@
+= render "shared/header"
+.main
+  .contents
+    = render "users/leftcontent"
+    .content  
+      .content__chapter
+        %h2.content__chapter__head
+          支払い方法
+        .card-index
+          %section.card-index__title
+            .card-index__title__head
+              %h3.card-index__title__head__sub クレジットカード一覧
+          %section.card-index__add
+            .card-index__add__card
+              = link_to "", class: "card-index__add__card__button" do
+                %i.fa.fa-credit-card
+                  クレジットカードを追加する
+          .card-index__regist
+            = link_to "", class: "card-index__regist__link" do
+              %span.card-index__regist__link__text 支払い方法について
+              %i.fa.fa-chevron-right
+
+= render "shared/purchaseBtn"
+= render "shared/banner"
+
+= render "shared/footer"

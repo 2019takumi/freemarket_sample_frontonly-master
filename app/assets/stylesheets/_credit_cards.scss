@@ -1,0 +1,187 @@
+.content {
+  float: right;
+  &__chapter {
+    margin: 0;
+    background-color: $white;
+    width: 700px;
+    &__head {
+      font-size: 24px;
+      padding: 8px 24px;
+      font-weight: bold;
+      text-align: center;
+      border-bottom: 1px solid $hexWhite;
+    }
+    &__form {
+      padding: 40px 40px 64px;
+      .form-box {
+        max-width: 343px;
+        margin: 0 auto;
+        &__number {
+          margin: 0;
+          &__payment {
+            font-weight: 600;
+          }
+          &__require {
+            background-color: $red;
+            color: $white;
+            margin: 0 0 0 8px;
+            font-size: 12px;
+          }
+          &__input {
+            @include input;
+          }
+          &__card-list {
+            margin: 8px 0 0;
+            font-size: 0;
+            li {
+              display: inline-block;
+              margin: 0 0 0 8px;
+            }
+          }
+        }
+        &__signup {
+          margin: 24px 0 0;
+          margin-top: 32px;
+          &__month {
+            @include selectBox();
+          }
+          &__year {
+            @include selectBox();
+          }
+          &__expire {
+            font-weight: 600;
+          }
+          &__require {
+            background-color: $red;
+            color: $white;
+            font-size: 12px;
+            margin: 0 0 0 8px;
+          }
+        }
+        &__security {
+          margin: 24px 0 0;
+          &__code {
+            font-weight: 600;
+          }
+          &__require {
+            background-color: $red;
+            color: $white;
+            margin: 0 0 0 8px;
+            font-size: 12px;
+          }
+          &__input {
+            @include input;
+          }
+          &__info {
+            margin: 8px 0 0;
+            text-align: right;
+            color: $skyBlue;
+            &__question {
+              display: inline-block;
+              width: 14px;
+              height: 14px;
+              border-radius: 50%;
+              background-color: $skyBlue;
+              color: $white;
+              line-height: 14px;
+              font-size: 12px;
+              text-align: center;
+            }    
+          }
+        }
+        &__btn {
+          @include btn($color: $white, $background: $red);
+          font-size: 14px;
+        }
+      }
+    }
+
+    .card-index {
+      padding: 64px;
+      &__title {
+        margin: 0;
+        padding: 0;
+        &__head {
+          max-width: 320px;
+          margin: 0 auto;
+          &__sub {
+            font-size: 16px;
+            font-weight: bold;
+          }
+        }
+        &__list {
+          .card-detail {
+            padding: 24px 0;
+            border-bottom: 1px solid #eee;
+            &__form {
+              position: relative;
+              margin: 0 auto;
+              max-width: 320px;
+              &__num {
+                margin: 8px 0 0;
+                font-size: 14px;
+              }
+              &__limit-num {
+                margin: 8px 0 0;
+                font-size: 14px;
+              }
+              &__button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 4px 6px;
+                background-color: $white;
+                border-radius: 3px;
+                border: 1px solid $red;
+                color: $red;
+                cursor: pointer;
+                font-size: 14px;
+              }
+              figure {
+                display: block;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+      &__regist {
+        &__link {
+          display: block;
+          margin: 40px 0 0;
+          text-align: right;
+          color: $skyBlue;
+          text-decoration: none;
+          &__text {
+            font-size: 14px;
+          }
+          i {
+            margin: 0 0 0 8px;
+          }
+        }
+      }
+      &__add {
+        padding: 24px 0;
+        border-bottom: 1px solid #eee;
+        &__card {
+          max-width: 320px;
+          margin: 0 auto;
+          &__button {
+            line-height: 48px;
+            background-color: $red;
+            border: 1px solid $red;
+            color: $white;
+            width: 100%;
+            display: block;
+            font-size: 14px;
+            text-align: center;
+            i {
+              margin-right: 16px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}

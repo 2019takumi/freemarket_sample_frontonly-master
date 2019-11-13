@@ -1,0 +1,21 @@
+.devise.signup-active
+  = render "devise/shared/header"
+  .deviseSection
+    .inner
+      %h2.title 電話番号の確認
+      .deviseForm
+        .new_user
+          = form_for :personal_information, url: sms_receive_user_registration_path,method: :post do |f|
+            .deviseForm__field
+              = f.label :携帯電話の番号
+              = f.text_field :tel, placeholder: '携帯電話の番号を入力', class: "inputField", required: true
+              %p 本人確認のため、携帯電話のSMS(ショートメッセージサービス)を利用して認証を行います。
+            .deviseForm__actions
+              = button_to sms_receive_user_registration_path, class: "deviseBtn" do
+                SMSを送信する
+              = link_to sms_receive_user_registration_path, class: "deviseBtn" do
+                SMSを送信する
+              %p ※電話番号は本人確認や不正利用防止のために利用します。他のユーザーに公開されることはありません。
+
+
+  =render "devise/shared/footer"
