@@ -10262,3 +10262,360 @@ Processing by Devise::RegistrationsController#new4 as HTML
 Completed 200 OK in 736ms (Views: 723.1ms | ActiveRecord: 0.0ms)
 
 
+DEPRECATION WARNING: #fog_provider is deprecated and has no effect (called from block in <top (required)> at /Users/tech-camp/Desktop/freemarket_sample_frontonly-master/config/initializers/carrierwave.rb:12)
+DEPRECATION WARNING: #fog_provider is deprecated and has no effect (called from block in <top (required)> at /Users/tech-camp/Desktop/freemarket_sample_frontonly-master/config/initializers/carrierwave.rb:12)
+  [1m[35m (49.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT GET_LOCK('1270652534283276165', 0)[0m
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (6.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('1270652534283276165')[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+DEPRECATION WARNING: #fog_provider is deprecated and has no effect (called from block in <top (required)> at /Users/tech-camp/Desktop/freemarket_sample_frontonly-master/config/initializers/carrierwave.rb:12)
+Started GET "/users/new4" for 127.0.0.1 at 2019-11-13 10:46:17 +0900
+  [1m[35m (3.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Devise::RegistrationsController#new4 as HTML
+  Rendering devise/registrations/new4.html.haml within layouts/application
+  Rendered devise/shared/_header.html.haml (1364.7ms)
+  Rendered devise/registrations/new4.html.haml within layouts/application (1388.0ms)
+Completed 500 Internal Server Error in 1438ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Undefined mixin 'progressThis'.):
+    1: 
+    2: %header.deviseHeader
+    3:   .headIcon
+    4:     =link_to image_tag("logo.svg",size: "185x49"), root_path
+    5:   = render "devise/shared/progress"
+  
+app/assets/stylesheets/_progress.scss:69:in `progressThis'
+app/assets/stylesheets/_progress.scss:69
+app/assets/stylesheets/application.scss:16
+app/views/devise/shared/_header.html.haml:4:in `_app_views_devise_shared__header_html_haml___2400521582480878383_70271862938440'
+app/views/devise/registrations/new4.html.haml:2:in `_app_views_devise_registrations_new__html_haml___3689525334514782797_70271863997000'
+Started GET "/users/new4" for 127.0.0.1 at 2019-11-13 10:50:15 +0900
+Processing by Devise::RegistrationsController#new4 as HTML
+  Rendering devise/registrations/new4.html.haml within layouts/application
+  Rendered devise/shared/_header.html.haml (656.5ms)
+  Rendered devise/registrations/new4.html.haml within layouts/application (669.0ms)
+Completed 500 Internal Server Error in 690ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Undefined mixin 'progressThis'.):
+    1: 
+    2: %header.deviseHeader
+    3:   .headIcon
+    4:     =link_to image_tag("logo.svg",size: "185x49"), root_path
+    5:   = render "devise/shared/progress"
+  
+app/assets/stylesheets/_progress.scss:69:in `progressThis'
+app/assets/stylesheets/_progress.scss:69
+app/assets/stylesheets/application.scss:16
+app/views/devise/shared/_header.html.haml:4:in `_app_views_devise_shared__header_html_haml___2400521582480878383_70271901432360'
+app/views/devise/registrations/new4.html.haml:2:in `_app_views_devise_registrations_new__html_haml___3689525334514782797_70271901540640'
+Started GET "/" for 127.0.0.1 at 2019-11-13 10:50:25 +0900
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.haml within layouts/application
+  Rendered shared/_header.html.haml (604.9ms)
+  Rendered products/index.html.haml within layouts/application (631.9ms)
+Completed 500 Internal Server Error in 652ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Undefined mixin 'progressThis'.):
+    2:   .headerInner
+    3:     .mainHeader.clearfix
+    4:       %h1.icon
+    5:         = link_to image_tag("logo.svg", size: "134x36"), root_path
+    6:       .searchBox
+    7:         = form_tag "", method: :get do
+    8:           %input.searchBox--input{id: "searchInput", name: "key",placeholder: "キーワードから探す"}
+  
+app/assets/stylesheets/_progress.scss:69:in `progressThis'
+app/assets/stylesheets/_progress.scss:69
+app/assets/stylesheets/application.scss:16
+app/views/shared/_header.html.haml:5:in `_app_views_shared__header_html_haml___2124372201233244545_70271909679360'
+app/views/products/index.html.haml:1:in `_app_views_products_index_html_haml___2602400402250113829_70271909992960'
+DEPRECATION WARNING: #fog_provider is deprecated and has no effect (called from block in <top (required)> at /Users/tech-camp/Desktop/freemarket_sample_frontonly-master/config/initializers/carrierwave.rb:12)
+Started GET "/" for 127.0.0.1 at 2019-11-13 10:53:36 +0900
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.haml within layouts/application
+  Rendered shared/_header.html.haml (1424.0ms)
+  Rendered products/index.html.haml within layouts/application (1484.1ms)
+Completed 500 Internal Server Error in 1548ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Undefined mixin 'progressThis'.):
+    2:   .headerInner
+    3:     .mainHeader.clearfix
+    4:       %h1.icon
+    5:         = link_to image_tag("logo.svg", size: "134x36"), root_path
+    6:       .searchBox
+    7:         = form_tag "", method: :get do
+    8:           %input.searchBox--input{id: "searchInput", name: "key",placeholder: "キーワードから探す"}
+  
+app/assets/stylesheets/_progress.scss:69:in `progressThis'
+app/assets/stylesheets/_progress.scss:69
+app/assets/stylesheets/application.scss:16
+app/views/shared/_header.html.haml:5:in `_app_views_shared__header_html_haml__3694053436239523759_70108303113820'
+app/views/products/index.html.haml:1:in `_app_views_products_index_html_haml__86601631736609477_70108278745400'
+DEPRECATION WARNING: #fog_provider is deprecated and has no effect (called from block in <top (required)> at /Users/tech-camp/Desktop/freemarket_sample_frontonly-master/config/initializers/carrierwave.rb:12)
+Started GET "/users/new4" for 127.0.0.1 at 2019-11-14 17:23:20 +0900
+  [1m[35m (40.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (6.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Devise::RegistrationsController#new4 as HTML
+  Rendering devise/registrations/new4.html.haml within layouts/application
+  Rendered devise/shared/_progress.html.haml (7.4ms)
+  Rendered devise/shared/_header.html.haml (1684.2ms)
+  Rendered credit_cards/_cardform.html.haml (20.0ms)
+  Rendered devise/shared/_footer.html.haml (6.9ms)
+  Rendered devise/registrations/new4.html.haml within layouts/application (1760.2ms)
+Completed 200 OK in 1938ms (Views: 1920.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new4" for 127.0.0.1 at 2019-11-14 17:24:15 +0900
+Processing by Devise::RegistrationsController#new4 as HTML
+  Rendering devise/registrations/new4.html.haml within layouts/application
+  Rendered devise/shared/_progress.html.haml (12.0ms)
+  Rendered devise/shared/_header.html.haml (18.3ms)
+  Rendered credit_cards/_cardform.html.haml (12.3ms)
+  Rendered devise/shared/_footer.html.haml (3.5ms)
+  Rendered devise/registrations/new4.html.haml within layouts/application (45.2ms)
+Completed 500 Internal Server Error in 435ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Undefined mixin 'progressThis'.):
+    4:     <title>FreemarketSample</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/_progress.scss:69:in `progressThis'
+app/assets/stylesheets/_progress.scss:69
+app/assets/stylesheets/application.scss:16
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__4325130000303775615_70286673417980'
+Started GET "/users/new1" for 127.0.0.1 at 2019-11-14 17:24:33 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"new1"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered shared/_header.html.haml (13.2ms)
+  Rendered users/_leftcontent.html.haml (11.2ms)
+  Rendered users/show.html.haml within layouts/application (39.4ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+    1: .leftContent
+    2:   %ul
+    3:     %li
+    4:       = link_to user_path(current_user) do
+    5:         %span マイページ
+    6:         = fa_icon "angle-right"
+    7:     %li
+  
+app/views/users/_leftcontent.html.haml:4:in `_app_views_users__leftcontent_html_haml___2067552112217386551_70286670723900'
+app/views/users/show.html.haml:12:in `_app_views_users_show_html_haml___3438171321318798310_70286669868100'
+Started GET "/users/new" for 127.0.0.1 at 2019-11-14 17:24:40 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"new"}
+  Rendering users/show.html.haml within layouts/application
+  Rendered shared/_header.html.haml (10.5ms)
+  Rendered users/_leftcontent.html.haml (9.2ms)
+  Rendered users/show.html.haml within layouts/application (36.8ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+    1: .leftContent
+    2:   %ul
+    3:     %li
+    4:       = link_to user_path(current_user) do
+    5:         %span マイページ
+    6:         = fa_icon "angle-right"
+    7:     %li
+  
+app/views/users/_leftcontent.html.haml:4:in `_app_views_users__leftcontent_html_haml___2067552112217386551_70286663832660'
+app/views/users/show.html.haml:12:in `_app_views_users_show_html_haml___3438171321318798310_70286656845840'
+Started GET "/" for 127.0.0.1 at 2019-11-14 17:24:46 +0900
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.haml within layouts/application
+  Rendered shared/_header.html.haml (10.5ms)
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered shared/_banner.html.haml (12.8ms)
+  Rendered shared/_footer.html.haml (23.1ms)
+  Rendered shared/_purchaseBtn.html.haml (6.2ms)
+  Rendered products/index.html.haml within layouts/application (152.5ms)
+Completed 500 Internal Server Error in 711ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Undefined mixin 'progressThis'.):
+    4:     <title>FreemarketSample</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/_progress.scss:69:in `progressThis'
+app/assets/stylesheets/_progress.scss:69
+app/assets/stylesheets/application.scss:16
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__4325130000303775615_70286673241800'
+Started GET "/" for 127.0.0.1 at 2019-11-14 17:24:59 +0900
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.haml within layouts/application
+  Rendered shared/_header.html.haml (9.6ms)
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered shared/_banner.html.haml (5.2ms)
+  Rendered shared/_footer.html.haml (13.0ms)
+  Rendered shared/_purchaseBtn.html.haml (2.9ms)
+  Rendered products/index.html.haml within layouts/application (67.3ms)
+Completed 200 OK in 859ms (Views: 855.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-11-14 17:25:03 +0900
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_progress.html.haml (5.4ms)
+  Rendered devise/shared/_header.html.haml (13.7ms)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_haml___3614144424056280261_70286673170460 at /Users/tech-camp/Desktop/freemarket_sample_frontonly-master/app/views/devise/registrations/new.html.haml:8)
+  Rendered devise/shared/_footer.html.haml (8.8ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (116.6ms)
+Completed 200 OK in 333ms (Views: 169.4ms | ActiveRecord: 59.5ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-11-14 17:27:03 +0900
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_progress.html.haml (4.5ms)
+  Rendered devise/shared/_header.html.haml (10.1ms)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_haml___3614144424056280261_70286671211140 at /Users/tech-camp/Desktop/freemarket_sample_frontonly-master/app/views/devise/registrations/new.html.haml:8)
+  Rendered devise/shared/_footer.html.haml (3.5ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (32.6ms)
+Completed 200 OK in 103ms (Views: 92.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-11-14 17:27:11 +0900
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_progress.html.haml (7.1ms)
+  Rendered devise/shared/_header.html.haml (13.2ms)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_haml___3614144424056280261_70286599540240 at /Users/tech-camp/Desktop/freemarket_sample_frontonly-master/app/views/devise/registrations/new.html.haml:8)
+  Rendered devise/shared/_footer.html.haml (3.2ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (39.3ms)
+Completed 500 Internal Server Error in 502ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Undefined mixin 'progressThis'.):
+    4:     <title>FreemarketSample</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/_progress.scss:66:in `progressThis'
+app/assets/stylesheets/_progress.scss:66
+app/assets/stylesheets/application.scss:16
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__4325130000303775615_70286670037240'
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-11-14 17:29:12 +0900
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_progress.html.haml (5.6ms)
+  Rendered devise/shared/_header.html.haml (12.0ms)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_haml___3614144424056280261_70286654285080 at /Users/tech-camp/Desktop/freemarket_sample_frontonly-master/app/views/devise/registrations/new.html.haml:8)
+  Rendered devise/shared/_footer.html.haml (3.4ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (40.5ms)
+Completed 500 Internal Server Error in 442ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Undefined mixin 'progressThis'.):
+    4:     <title>FreemarketSample</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/_progress.scss:66:in `progressThis'
+app/assets/stylesheets/_progress.scss:66
+app/assets/stylesheets/application.scss:16
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__4325130000303775615_70286654174280'
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-11-14 17:30:37 +0900
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_progress.html.haml (5.7ms)
+  Rendered devise/shared/_header.html.haml (11.3ms)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_haml___3614144424056280261_70286668453280 at /Users/tech-camp/Desktop/freemarket_sample_frontonly-master/app/views/devise/registrations/new.html.haml:8)
+  Rendered devise/shared/_footer.html.haml (7.2ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (38.2ms)
+Completed 500 Internal Server Error in 483ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Undefined mixin 'progressStandBy'.):
+    4:     <title>FreemarketSample</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/_progress.scss:69:in `progressStandBy'
+app/assets/stylesheets/_progress.scss:69
+app/assets/stylesheets/application.scss:16
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__4325130000303775615_70286668368020'
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-11-14 17:32:21 +0900
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_progress.html.haml (4.8ms)
+  Rendered devise/shared/_header.html.haml (16.5ms)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_haml___3614144424056280261_70286637974300 at /Users/tech-camp/Desktop/freemarket_sample_frontonly-master/app/views/devise/registrations/new.html.haml:8)
+  Rendered devise/shared/_footer.html.haml (3.6ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (43.3ms)
+Completed 200 OK in 806ms (Views: 794.8ms | ActiveRecord: 0.0ms)
+
+

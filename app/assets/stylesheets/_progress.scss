@@ -27,9 +27,8 @@
       }
     }
   }
-}
-
-.progress-status_bar {
+  }
+  .progress-status_bar {
   position: absolute;
   left: 50%;
   top: 25px;
@@ -39,32 +38,30 @@
   height: 2px;
   background: $lightgray;
   z-index: 10;
-}
-
-.end .progress-status_bar {
+  }
+  .end .progress-status_bar {
   width: 0px;
-}
-.payment .progress-status_bar {
+  }
+  .payment .progress-status_bar {
   width: 100px;
-}
-#through{
+  }
+  #through{
   color: $red;
   .progress-status{
     background: $red;
   }
-}
-#through .progress-status_bar{
+  }
+  #through .progress-status_bar{
   background: $red;
-}
-#active{
+  }
+  #active{
   color: #ea352d;
   .progress-status{
     background: #ea352d;
   }
-}
-
+  }
  // 会員情報
-.signup-through {
+  .signup-through {
   #through {
     @include progressThis;
   }
@@ -80,10 +77,9 @@
   #end{
     @include progressStandBy;
   }
-}
-
+  }
  // 電話番号認証
-.signup-active {
+  .signup-active {
   #through {
     @include progressDone;
   }
@@ -99,10 +95,9 @@
   #end{
     @include progressStandBy;
   }
-}
-
+  }
  // お届け住所登録画面
-.signup-address {
+  .signup-address {
   #through {
     @include progressDone;
   }
@@ -118,10 +113,9 @@
   #end{
     @include progressStandBy;
   }
-}
-
+  }
  // クレジットカード登録画面
-.signup-payment {
+  .signup-payment {
   #through {
     @include progressDone;
   }
@@ -137,9 +131,9 @@
   #end{
     @include progressStandBy;
   }
-}
+  }
  // 完了画面
-.signup-done {
+  .signup-done {
   #through {
     @include progressDone;
   }
@@ -155,4 +149,4 @@
   #end{
     @include progressThis;
   }
-}
+  }

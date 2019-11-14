@@ -192,3 +192,31 @@
     width: 80%;
   }
 }
+
+@mixin progressStandBy() {
+  color: $hexGray;
+  .progress-status{
+    background: $lightgray;
+  }
+  .progress-status_bar{
+    background: $lightgray;
+  }
+}
+@mixin progressDone() {
+  color: $hexGray;
+  .progress-status {
+    background: $red;
+  }
+  .progress-status_bar {
+    background: $red;
+  }
+}
+@mixin progressThis() {
+  color: $red;
+  .progress-status{
+    background: $red;
+  }
+  .progress-status_bar{
+    background: $lightgray;
+  }
+}
